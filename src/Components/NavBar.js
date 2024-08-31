@@ -1,5 +1,5 @@
 import {Navbar,Container,Nav} from "react-bootstrap";
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {
     BrowserRouter as Router
   } from "react-router-dom";
@@ -9,7 +9,7 @@ export const NavBar = () => {
     const [activeLink,setActiveLink] = useState('home');
     const onUpdateActiveLink = (link) => {
         setActiveLink(link);
-      };
+      }
       
     return (
         <Router>
@@ -24,7 +24,7 @@ export const NavBar = () => {
                   <Nav.Link href="#aboutus" className={activeLink === 'aboutus' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('aboutus')}>About Us</Nav.Link>
                   <Nav.Link href="#tokenomics" className={activeLink === 'tokenomics' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('tokenomics')}>Tokenomics</Nav.Link>
                   <Nav.Link href="#roadmap" className={activeLink === 'roadmap' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('roadmap')}>Roadmap</Nav.Link>
-                  <Nav.Link href="#faq" className={activeLink === 'FAQ' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('faq')}>FAQ</Nav.Link>
+                  <Nav.Link href="#faq" className={activeLink === 'faq' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('faq')}>FAQ</Nav.Link>
                 </Nav>
                 <span className="navbar-text">
                   <HashLink to='#buytoken'>
