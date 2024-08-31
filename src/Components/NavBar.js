@@ -1,10 +1,16 @@
 import {Navbar,Container,Nav} from "react-bootstrap";
+import React, { useState } from 'react';
 import {
     BrowserRouter as Router
   } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
 export const NavBar = () => {
+    const [activeLink,setActiveLink] = useState('home');
+    const onUpdateActiveLink = (link) => {
+        setActiveLink(link);
+      };
+      
     return (
         <Router>
           <Navbar expand="md">
@@ -17,8 +23,8 @@ export const NavBar = () => {
                   <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
                   <Nav.Link href="#aboutus" className={activeLink === 'aboutus' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('aboutus')}>About Us</Nav.Link>
                   <Nav.Link href="#tokenomics" className={activeLink === 'tokenomics' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('tokenomics')}>Tokenomics</Nav.Link>
-                  <Nav.Link href="#Roadmap" className={activeLink === 'roadmap' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('roadmap')}>Roadmap</Nav.Link>
-                  <Nav.Link href="#FAQ" className={activeLink === 'FAQ' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('faq')}>FAQ</Nav.Link>
+                  <Nav.Link href="#roadmap" className={activeLink === 'roadmap' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('roadmap')}>Roadmap</Nav.Link>
+                  <Nav.Link href="#faq" className={activeLink === 'FAQ' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('faq')}>FAQ</Nav.Link>
                 </Nav>
                 <span className="navbar-text">
                   <HashLink to='#buytoken'>
