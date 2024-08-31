@@ -1,9 +1,10 @@
+
 import {Navbar,Container,Nav} from "react-bootstrap";
 import { useState } from 'react';
 import {
     BrowserRouter as Router
   } from "react-router-dom";
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 
 export const NavBar = () => {
@@ -28,14 +29,14 @@ export const NavBar = () => {
                   <Nav.Link href="#faq" className={activeLink === 'faq' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('faq')}>FAQ</Nav.Link>
                 </Nav>
                 <span className="navbar-text">
-                  <link to='#buytoken'>
+                  <HashLink to='#buytoken'>
                     <button className="vvd"><span>Buy Token</span></button>
-                  </link>
+                  </HashLink>
                 </span>
               </Navbar.Collapse>
             </Container>
           </Navbar>
         </Router>
-    )
+    );
 
-}
+};
