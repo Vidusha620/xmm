@@ -3,7 +3,8 @@ import { useState } from 'react';
 import {
     BrowserRouter as Router
   } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
+
 
 export const NavBar = () => {
     const [activeLink,setActiveLink] = useState('home');
@@ -27,9 +28,9 @@ export const NavBar = () => {
                   <Nav.Link href="#faq" className={activeLink === 'faq' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('faq')}>FAQ</Nav.Link>
                 </Nav>
                 <span className="navbar-text">
-                  <HashLink to='#buytoken'>
+                  <link to='#buytoken'>
                     <button className="vvd"><span>Buy Token</span></button>
-                  </HashLink>
+                  </link>
                 </span>
               </Navbar.Collapse>
             </Container>

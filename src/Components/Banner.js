@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
-import xmmHero from "../Images/img/xmm-hero.png";
-import Arrow from "../Images/img/arrow.png";
+import xmmHero from "../Images/xmm-hero.png";
+import Arrow from "../Images/arrow.png";
 
 
 export const Banner = () => {
@@ -21,7 +21,7 @@ export const Banner = () => {
               </Col>
               <Col xs={12} md={6} xl={5}>
                     <div>
-                     <img src={xmmHero} alt="XMM Hero Image"/>
+                      <img src={xmmHero} alt="XMM Hero Image"/>
                     </div>
               </Col>
             </Row>
