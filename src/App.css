@@ -1,80 +1,169 @@
-/*Common*/
-
+/*Default CSS*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
-
-body{
+body {
   position: relative;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  line-height: normal;
-}
-
-
-button {
-  border: 0;
-  background-color: transparent;
-}
-
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
 }
 
 
 /*NavBar*/
+.navbar {
+  color: #fff;
+}
+
+.navbar a {
+  color: #fff; 
+}
+
 
 nav.navbar{
-  padding: 18px 0;
-  position: fixed;
+
+  position:fixed;
   width: 100%;
-  top: 0;
   background-color: #754cff;
 }
+span.navbar-text {
+  display: flex;
+  align-items: center;
+}
+
 .navbar-text button{
   border: 1px solid #fff;
-  background-color:#de660a ;
+  border-radius: 20px; 
+  background: linear-gradient(90.21deg, #e4a667 -5.91%,#de660a 111.58%);
+
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /*Banner*/
-
 .banner{
+  margin-top: 0;
+  letter-spacing: 0.1px;
+  padding: 80px 0;
   background-color: #754cff;
+}
+.banner h1{
+  text-align: left;
+  font-weight: 1000;
+  font-size: 7vw;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner p{
+  font-size: 18px;
+  padding-top: 10px;
+  line-height:30px;
+  padding-bottom: 10px;
+  letter-spacing: 0.8px;
+
 }
 .banner button{
   border: 1px solid #fff;
-  background-color:#de660a ;
+  border-radius: 20px; 
+  background: linear-gradient(90.21deg, #e4a667 -5.91%,#de660a 111.58%);
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.users {
+  position: relative; 
+  display: flex; 
+  margin-left: 10px;
+}
+
+.user {
+  height: 30px; 
+  width: auto;
+  position: absolute; 
+  border-radius: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.user:nth-child(1) {
+  left: 0; 
+  z-index: 1; 
+}
+
+.user:nth-child(2) {
+  left: 20px; 
+  z-index: 2; 
+}
+
+.user:nth-child(3) {
+  left: 40px; 
+  z-index: 3; 
+}
+.banner h2{
+  padding-top: 5%;
+  font-size: 25px;
+  font-weight: 600;
+
+}
+.banner h3{
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0.8px;
 
 }
 
 
 /*About Us*/
-
 .aboutUs{
-  background-color: #03031d;
+  padding: 80px;
+  background: linear-gradient(90.21deg,#2e1b5d -5.91%,#03031d 111.58%);
+}
+.tagline{
+  border: 2px solid #555; 
+  border-radius: 20px; 
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+
 }
 .aboutUs button{
   border: 1px solid #fff;
-  background-color:#de660a ;
+  border-radius: 20px; 
+  background: linear-gradient(90.21deg, #e4a667 -5.91%,#de660a 111.58%);
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.advantages-container{
+  padding-bottom: 5%;
 }
 
 /*Features*/
 
 .features{
+  padding: 80px;
   background-color: #03031d;
+}
+
+.features h1{
+  padding-bottom: 20%;
+}
+
+.child-container {
+  flex: 1; 
+  padding: 5%;
+  border: 2px solid #555; 
+  background: linear-gradient(90.21deg,#2e1b5d -5.91%,#03031d 111.58%);
+ 
+  border-radius: 5px; 
+  color: white; 
+  text-align: left; 
 }
