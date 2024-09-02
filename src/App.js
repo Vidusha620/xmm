@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./Components/NavBar";
 import { Banner } from "./Components/Banner";
 import { AboutUs } from './Components/AboutUs';
-//import {Features} from "./Components/Features";
+import { Features } from './Components/Features';
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
       <NavBar/>
       <Banner/>
       <AboutUs/>
+      <Features/>
     </div>
   );
 }
